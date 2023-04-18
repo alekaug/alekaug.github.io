@@ -7,12 +7,12 @@
 }
 
 * {
-    color: rgb(249, 249, 249);
+    font-family: 'Roboto';
+    color: white;
 }
 
 html, body {
-    height: 100%;
-    background: rgb(35, 35, 35);
+    background: rgb(22, 22, 22);
 }
 
 div#main-container {
@@ -22,40 +22,60 @@ div#main-container {
     vertical-align: middle;
 }
 
-p#upfront-message {
-    font-family: 'Roboto';
+img#element {
+    align-self: center;
+    align-content: center;
+    height: 20vh;
+}
+
+h1#upfront-message {
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 2em;
 }
 
 p#sub-message {
-    font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: 1em;
 }
 
 button#return-button {
     /*** Basic settings ***/
+    font-size: 100%;
     font-family: 'Roboto';
     font-weight: bold;
     margin-top: 40px;
 
     /*** Look & feel ***/
+    transition: 300ms;
     border: 0;
+    /* background-image: linear-gradient(to right, rgb(187, 210, 224), rgb(203, 231, 190)), linear-gradient(to bottom, rgb(114, 191, 87), rgb(116, 191, 86)), linear-gradient(to left, rgb(204, 233, 187), rgb(187, 210, 224)), linear-gradient(to top, rgb(84, 144, 184), rgb(80, 138, 176)); */
     padding: 20px 30px;
-    background: rgb(66, 164, 230);
+    background: #157CBC;
+    box-shadow: 0 5px 5px 5px rgba(11, 26, 36, 0.403);
 }
 
 button#return-button:hover {
+    cursor: pointer;
     background: rgb(83, 176, 238);
+    box-shadow: 0 0 15px 15px rgba(56, 134, 186, 0.1);
 }
 
 @media only screen and (max-width: 700px) {
+    div#main-container {
+        width: 100%;
+    }
+
     p#upfront-message {
-        font-size: 8vw;
+        width: 100%;
+        font-size: 3em;
     }
 
     p#sub-message {
-        font-size: 3.5vw;
+        font-size: 1em;
+    }
+
+    button#return-button {
+        font-size: 1em;
+        width: 80%;
     }
 }
