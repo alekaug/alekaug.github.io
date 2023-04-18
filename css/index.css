@@ -1,0 +1,61 @@
+
+
+/*** Custom font ***/
+@font-face {
+    font-family: Roboto Bold;
+    src: url(fonts/Roboto-Black.ttf) format('truetype');
+}
+
+* {
+    color: rgb(249, 249, 249);
+}
+
+html, body {
+    height: 100%;
+    background: rgb(35, 35, 35);
+}
+
+div#main-container {
+    margin: 80px auto;
+    height: 80%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+p#upfront-message {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+p#sub-message {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+button#return-button {
+    /*** Basic settings ***/
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-top: 40px;
+
+    /*** Look & feel ***/
+    border: 0;
+    padding: 20px 30px;
+    background: rgb(66, 164, 230);
+}
+
+button#return-button:hover {
+    background: rgb(83, 176, 238);
+}
+
+@media only screen and (max-width: 700px) {
+    p#upfront-message {
+        font-size: 8vw;
+    }
+
+    p#sub-message {
+        font-size: 3.5vw;
+    }
+}
